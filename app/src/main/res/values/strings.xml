@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Svga</string>
+    <string name="porsche">保时捷</string>
+    <string name="rose">玫瑰</string>
+    <string name="angel">天使</string>
+    <string name="cupid_1">丘比特1</string>
+    <string name="cupid_2">丘比特2</string>
+</resources>

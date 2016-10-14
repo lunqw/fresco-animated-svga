@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2e2e"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yy.lqw.app.svga.MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_showImage"
+        android:layout_width="375dp"
+        android:layout_height="375dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_porsche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/porsche"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_rose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rose"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_angel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/angel"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cupid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cupid_1" />
+
+        <Button
+            android:id="@+id/btn_cupid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cupid_2" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</FrameLayout>
