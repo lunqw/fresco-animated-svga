@@ -1,1 +1,1 @@
-include ':app', ':svga'
+include ':sample', ':library'
