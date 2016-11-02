@@ -45,6 +45,7 @@ class SVGAFrame implements AnimatedImageFrame {
             frame = sprite.frames.get(mFrameNumber);
             if (frame != null
                     && frame.layout != null
+                    && frame.transform != null
                     && frame.alpha > 0
                     && (subBitmap = mDescriptor.cache.get(sprite.imageKey)) != null) {
                 mPaint.setAlpha((int) (frame.alpha * 0xFF));
