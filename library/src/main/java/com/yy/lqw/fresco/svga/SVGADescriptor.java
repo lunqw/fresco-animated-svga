@@ -5,6 +5,7 @@ import android.graphics.Matrix;
 import android.graphics.Path;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -29,7 +30,7 @@ class SVGADescriptor implements Serializable {
     public Map<String, String> images;
 
     // 位图缓存
-    public transient Map<String, Bitmap> cache = new TreeMap<>();
+    public transient Map<String, Bitmap> cache = new HashMap<>();
 
     /**
      * Sprite, 描述一个子动画

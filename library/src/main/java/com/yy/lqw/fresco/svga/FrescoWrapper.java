@@ -3,6 +3,7 @@ package com.yy.lqw.fresco.svga;
 import android.content.Context;
 import android.graphics.Bitmap;
 
+import com.facebook.common.internal.Preconditions;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.animated.factory.AnimatedImageFactory;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
@@ -22,8 +23,8 @@ public class FrescoWrapper {
                 .getAnimatedImageFactory();
         PlatformDecoder platformDecoder = ImagePipelineFactory.getInstance()
                 .getPlatformDecoder();
-        SVGAImageDecoder decoder = new SVGAImageDecoder(factory, platformDecoder,
-                Bitmap.Config.ARGB_8888);
+        SVGAImageDecoder decoder = new SVGAImageDecoder(
+                context, factory, platformDecoder, Bitmap.Config.ARGB_8888);
         builder.setImageDecoder(decoder);
         Fresco.initialize(context, builder.build());
     }

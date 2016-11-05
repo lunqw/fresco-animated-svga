@@ -31,4 +31,5 @@ dependencies {
     compile 'com.facebook.fresco:animated-webp:0.13.0'
     compile 'com.facebook.fresco:webpsupport:0.13.0'
     compile "com.google.code.gson:gson:2.7"
+    compile "de.ruedigermoeller:fst:2.48"
 }
